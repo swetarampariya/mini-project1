@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+body {
+    font-family: Cursive;
+    background-color: darkgray;
+    font-size: 20px;
+}
+/*heade.css*/
+nav{
+    background-color: cadetblue;
+    padding: 5px;
+    font-size: 20px;
+    overflow: auto;
+    
+}
+ul{
+    padding: 10px;
+    margin: 0 0 0 250px;
+    list-style: none;
+
+}
+li{
+    float: right;
+}
+li a{
+    margin: 10px;
+    padding: 10px;
+    width:100px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: right;
+}
+li a:hover{
+    background-color:goldenrod;
+    text-transform: uppercase;
+
+}
+.logo img{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 10px;
+    transition: width 2s;
+    
+}
+.logo img:hover{
+    width: 300px;
+}
+/*background*/
+/*background*/
+.background {
+
+    height: 600px;
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.background img {
+    position: absolute;
+    left: 0;
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+
+}
+
+.background img.top:hover {
+    opacity: 0;
+}
+
+.top-left {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    text-shadow: 2px 2px 5px red;
+
+}
+  
+/*about*/
+.about {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: rgb(238, 228, 238);
+}
+.row {
+    display: -webkit-flex;
+    display: flex;
+    padding: 10px;
+    margin: 5px;
+}
+.column {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 5px;
+    margin: 5px;
+    height: 350px;
+    width: 100%;
+    text-align: left;
+}
+.column_img:hover {
+    transform: scale(1.1);
+}
+/*gallery*/
+.gallery {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(241, 220, 162);
+}
+.row2 {
+    display: -webkit-flex;
+    display: flex;
+    padding: 10px;
+    margin: 5px;
+    
+}
+.column2 {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    position: relative;
+    padding: 5px;
+    margin: 5px;
+    height: 200px;
+    text-align: center;
+ }
+ .overlay1 {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-image: url(https://parade.com/wp-content/uploads/2020/06/iStock-481057316.jpg);
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: 5s ease;
+    background-size: 100% 100%;
+}
+.column2:hover .overlay1 {
+    bottom: 0;
+    height: 100%;
+}
+.overlay2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(https://www.tvinsider.com/wp-content/uploads/2019/10/Dancing-with-the-Birds-5.jpg);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: 5s ease;
+    background-size: 100% 100%;
+}
+.column2:hover .overlay2 {
+    bottom: 0;
+    height: 100%;
+}
+.overlay3 {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/british-birds-collared-dive-1607695115.jpg?resize=480:*);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: 5s ease;
+    background-size: 100% 100%;
+}
+.column2:hover .overlay3 {
+    width: 100%;
+    left: 0;
+}
+.overlay4 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(https://cdn.cdnparenting.com/articles/2019/02/21150954/1053345971-H-1024x700.jpg);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: 5s ease;
+    background-size: 100% 100%;
+}
+.column2:hover .overlay4 {
+    width: 100%;
+    
+}
+.overlay5 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+   background-image: url(https://images-na.ssl-images-amazon.com/images/I/61t-EamFv0L._AC_SL1198_.jpg);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: 3s ease;
+    transition: 3s ease;
+    background-size: 100% 100%;
+}
+
+.column2:hover .overlay5 {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+.overlay6 {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-image: url(https://petcomments.com/i/r/400x-/media/p/169/budgerigar.jpg);
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: 5s ease;
+    background-size: 100% 100%;
+}
+.column2:hover .overlay6 {
+    bottom: 0;
+    height: 100%;
+}
+ /*footer*/
+ .footer {
+    background-color: rgb(127, 159, 160);
+    text-align: center;
+
+}
+.fa {
+    padding: 10px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 20px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  
